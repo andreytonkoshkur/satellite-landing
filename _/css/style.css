@@ -1,0 +1,159 @@
+/*  Reset css */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+footer {
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+}
+
+footer a {
+	color: #000;
+	text-decoration: none;
+}
+
+/* End Reset CSS */
+
+/* Fonts */
+@font-face {
+    font-family: 'pf_din_text_cond_proregular';
+    src: url('../font/pfdintextcondpro/pfdintextcondpro-regular_1-webfont.eot');
+    src: url('../font/pfdintextcondpro/pfdintextcondpro-regular_1-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/pfdintextcondpro/pfdintextcondpro-regular_1-webfont.woff2') format('woff2'),
+         url('../font/pfdintextcondpro/pfdintextcondpro-regular_1-webfont.woff') format('woff'),
+         url('../font/pfdintextcondpro/pfdintextcondpro-regular_1-webfont.ttf') format('truetype'),
+         url('../font/pfdintextcondpro/pfdintextcondpro-regular_1-webfont.svg#pf_din_text_cond_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'pf_din_text_cond_prothin';
+    src: url('../font/pfdintextcondprothin/pfdintextcondpro-thin-webfont.eot');
+    src: url('../font/pfdintextcondprothin/pfdintextcondpro-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/pfdintextcondprothin/pfdintextcondpro-thin-webfont.woff2') format('woff2'),
+         url('../font/pfdintextcondprothin/pfdintextcondpro-thin-webfont.woff') format('woff'),
+         url('../font/pfdintextcondprothin/pfdintextcondpro-thin-webfont.ttf') format('truetype'),
+         url('../font/pfdintextcondprothin/pfdintextcondpro-thin-webfont.svg#pf_din_text_cond_prothin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* End Fonts */ 
+.wrapper {
+	max-width: 960px;
+	margin: 0 auto;
+	display: block;
+}
+.top_meny{ 
+	display: inline-block;
+}
+.top_meny .nav{
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	height: 50px;
+	width: 230px;	
+	background: -moz-linear-gradient(90deg, rgba(210,210,210,1) 0%, rgba(210,210,210,1) 9%, rgba(210,210,210,1) 17%, rgba(238,238,238,1) 67%, rgba(248,248,248,1) 91%, rgba(248,248,248,1) 100%); /* ff3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(248,248,248,1)), color-stop(9%, rgba(248,248,248,1)), color-stop(33%, rgba(238,238,238,1)), color-stop(83%, rgba(210,210,210,1)), color-stop(91%, rgba(210,210,210,1)), color-stop(100%, rgba(210,210,210,1))); /* safari4+,chrome */
+	background: -webkit-linear-gradient(90deg, rgba(210,210,210,1) 0%, rgba(210,210,210,1) 9%, rgba(210,210,210,1) 17%, rgba(238,238,238,1) 67%, rgba(248,248,248,1) 91%, rgba(248,248,248,1) 100%); /* safari5.1+,chrome10+ */
+	background: -o-linear-gradient(90deg, rgba(210,210,210,1) 0%, rgba(210,210,210,1) 9%, rgba(210,210,210,1) 17%, rgba(238,238,238,1) 67%, rgba(248,248,248,1) 91%, rgba(248,248,248,1) 100%); /* opera 11.10+ */
+	background: -ms-linear-gradient(90deg, rgba(210,210,210,1) 0%, rgba(210,210,210,1) 9%, rgba(210,210,210,1) 17%, rgba(238,238,238,1) 67%, rgba(248,248,248,1) 91%, rgba(248,248,248,1) 100%); /* ie10+ */
+	background: linear-gradient(0deg, rgba(210,210,210,1) 0%, rgba(210,210,210,1) 9%, rgba(210,210,210,1) 17%, rgba(238,238,238,1) 67%, rgba(248,248,248,1) 91%, rgba(248,248,248,1) 100%); /* w3c */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f8f8', endColorstr='#d2d2d2',GradientType=0 ); /* ie6-9 */
+	padding: 17px 0 0 0;
+}
+.nav .nav_a{
+	font-family: 'pf_din_text_cond_proregular', sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #858585;
+}
+.logo{
+	padding: 49px 75px;
+	float: left;
+	clear: both;
+}
+.navi{
+	float: right;
+	margin: 0 5px;
+}
+.navi .navi_text{
+	font-family: 'pf_din_text_cond_prothin';
+	font-size: 19px;
+	padding: 19px 24px 10px 0;
+}
+.navi_text1{
+	font-family: 'pf_din_text_cond_prothin';
+	font-size: 17px;
+	color: #adabad;
+	padding: 0px 5px 13px 67px;
+}
+.navi_numb{
+	font-family: 'Times New Roman';
+	font-size: 39.29px;
+	font-weight: 700;
+	padding: 0px 0px 10px 10px;
+}
+.bth_text{
+	background: #83be3e;
+	text-decoration: none;
+	text-align: center;
+	padding: 8px 12px;
+	font-size: 13.53px;
+	font-family: 'pf_din_text_cond_proregular';
+	color: #e2efd7;
+	border-radius: 4px;
+	box-shadow: inset -2px -3px #588523;
+}
+.navi_bth{
+	padding: 18px 21px 31px 54px;
+}
+
+
+
+
+	
